@@ -1,9 +1,11 @@
-body{
-    margin: 0px;
-    padding: 0px;
+*{
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  padding: 0;
+
 }
 
-main{
+body{
     background-color: #E8DCCD;
 }
 
@@ -11,6 +13,7 @@ header{
     position: sticky;
     top: 0;
     background-color: #BBD9B5;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 8px;
 
 }
 .headerMain{
@@ -30,7 +33,6 @@ header{
     color: #36395A;
     cursor: pointer;
     display: inline-flex;
-    font-family: "JetBrains Mono",monospace;
     height: 48px;
     justify-content: center;
     line-height: 1;
@@ -175,3 +177,118 @@ border-radius: 12px;
       line-height: 1.8;
     }
   }
+
+  @keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+}
+
+.statsBar{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 30px 0px;
+  border-bottom: 1px solid #58a66f;
+  width: 85%;
+  margin: 0 auto;
+  font-size: 30px;
+}
+
+.heroBanner {
+  background: linear-gradient(330deg, #e28833, #58a66f);
+  background-size: 400% 400%;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  -webkit-animation: AnimationName 9s ease infinite;
+  -moz-animation: AnimationName 9s ease infinite;
+  animation: AnimationName 9s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:17% 0%}
+  50%{background-position:84% 100%}
+  100%{background-position:17% 0%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:17% 0%}
+  50%{background-position:84% 100%}
+  100%{background-position:17% 0%}
+}
+@keyframes AnimationName {
+  0%{background-position:17% 0%}
+  50%{background-position:84% 100%}
+  100%{background-position:17% 0%}
+}
+
+.ball {
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.7;
+}
+
+.whatIs{
+  margin: 40px;
+  text-align: center;
+}
+.whatIs h2{
+  margin: 40px;
+}
+.cardsWhat{
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+}
+.cardWhat{
+  background-color: #ffffff;
+  box-shadow: #BBD9B5 0px 10px 0px 5px;
+  width: 300px;
+  height: auto;
+  text-align: center;
+  padding: 30px;
+  border-radius: 8px;
+
+}
+
+.cardWhat h3{
+  margin-bottom: 15px;
+}
+
+
+.divisor{
+  margin: 50px;
+}
+
+.divisor span{
+  display: flex; 
+  justify-content: center; 
+  margin: 50px auto; 
+  font-style: italic;
+  
+}
+.divisor hr{
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+.howItWorks{
+  margin: 8vh;
+}
+
+.howItWorks h2{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cardsHow{
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+}
