@@ -1,18 +1,27 @@
+:root {
+  --primary: #E28833;
+  --secondary: #58a66f;
+  --black:#000;
+  --background:#F1F1F1
+
+}
+
 *{
-  font-family: 'Rubik', sans-serif;
+  font-family: 'circular', sans-serif;
   margin: 0;
   padding: 0;
 
 }
 
+
 body{
-    background-color: #E8DCCD;
+    background-color: var(--background);
 }
 
 header{
     position: sticky;
     top: 0;
-    background-color: #BBD9B5;
+    background-color: var(--secondary);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 8px;
 
 }
@@ -22,15 +31,15 @@ header{
     padding: 20px;
 }
 
-#connect-button {
+#connect-button, #search-button{
     align-items: center;
     appearance: none;
-    background-color: #FCFCFD;
+    background-color: var(--background);
     border-radius: 4px;
     border-width: 0;
     box-shadow: rgba(45, 35, 66, 0.2) 0 2px 4px,rgba(45, 35, 66, 0.15) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
     box-sizing: border-box;
-    color: #36395A;
+    color: var(--black);
     cursor: pointer;
     display: inline-flex;
     height: 48px;
@@ -52,16 +61,16 @@ header{
     font-size: 18px;
    }
    
-   #connect-button:focus {
+   #connect-button:focus, #search-button:focus {
     box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
    }
    
-   #connect-button:hover {
+   #connect-button:hover, #search-button:hover  {
     box-shadow: rgba(45, 35, 66, 0.3) 0 4px 8px, rgba(45, 35, 66, 0.2) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
     transform: translateY(-2px);
    }
    
-   #connect-button:active {
+   #connect-button:active, #search-button:active  {
     box-shadow: #D6D6E7 0 3px 7px inset;
     transform: translateY(2px);
    }
@@ -74,7 +83,7 @@ header{
 
 .flexBodyImagen{
     margin: 50px;
-    background-color: #FCFCFD;
+    background-color: var(--background);
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
@@ -87,13 +96,13 @@ header{
 
 
 .flexBodyBloques p{
-background-color: #BBD9B5;
+background-color: var(--secondary);
 padding: 20px;
 border-radius: 12px;
 }
 
 .footer-distributed {
-    background-color: #BBD9B5;
+    background-color: var(--secondary);
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     width: 100%;
@@ -103,7 +112,7 @@ border-radius: 12px;
   }
   
   .footer-distributed .footer-left p {
-    color: #8f9296;
+    color: var(--black);
     font-size: 14px;
     margin: 0;
   }
@@ -112,7 +121,7 @@ border-radius: 12px;
   .footer-distributed p.footer-links {
     font-size: 18px;
     font-weight: bold;
-    color: black;
+    color: var(--black);
     margin: 0 0 10px;
     padding: 0;
     transition: ease .25s;
@@ -130,7 +139,7 @@ border-radius: 12px;
     content: "·";
     font-size: 20px;
     left: 0;
-    color: black;
+    color: var(--black);
     display: inline-block;
     padding-right: 5px;
   }
@@ -149,10 +158,10 @@ border-radius: 12px;
     display: inline-block;
     width: 35px;
     height: 35px;
-    background-color: #33383b;
+    background-color: var(--black);
     border-radius: 2px;
     font-size: 20px;
-    color: #ffffff;
+    color: var(--background);
     text-align: center;
     line-height: 35px;
     margin-left: 3px;
@@ -196,7 +205,7 @@ border-radius: 12px;
 }
 
 .heroBanner {
-  background: linear-gradient(330deg, #e28833, #58a66f);
+  background: linear-gradient(330deg, var(--primary), var(--secondary));
   background-size: 400% 400%;
   height: 600px;
   width: 100%;
@@ -246,8 +255,8 @@ border-radius: 12px;
   justify-content: center;
 }
 .cardWhat{
-  background-color: #ffffff;
-  box-shadow: #BBD9B5 0px 10px 0px 5px;
+  background-color: var(--background);
+  box-shadow: var(--secondary) 0px 10px 0px 5px;
   width: 300px;
   height: auto;
   text-align: center;
@@ -259,7 +268,6 @@ border-radius: 12px;
 .cardWhat h3{
   margin-bottom: 15px;
 }
-
 
 .divisor{
   margin: 50px;
@@ -289,6 +297,60 @@ border-radius: 12px;
 
 .cardsHow{
   display: flex;
-  gap: 5%;
+  gap: 20px;
   justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.cardHow{
+  box-shadow: var(--primary) 0px 0px 0px 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 200px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.webBHeader{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: var(--primary);
+}
+
+.webB{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.webBBody{
+  height: auto;
+  border: var(--primary) 8px solid;
+}
+
+.podsContainer{
+  padding: 20px;
+  display: flex;
+  gap: 50px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.podsContainer img{
+border-radius: 50%;
+padding: 5px;
+box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+animation: rotateAnimation 4s linear infinite;
+}
+
+@keyframes rotateAnimation {
+	from {transform: rotateY(0deg);}
+	to {transform: rotateY(360deg);}
 }
