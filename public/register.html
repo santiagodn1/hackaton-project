@@ -10,16 +10,24 @@
     <h1>Registrarse</h1>
     <form action="/register" method="post" class="border rounded border-primary p-5">
         <div class="form-group mb-3">
-            <label for="formGroupExampleInput">Nombre: </label>
-            <input name="nombre" type="text" class="form-control" id="formGroupExampleInput" placeholder="Jose" required>
-        </div>
-        <div class="form-group mb-3">
-            <label for="formGroupExampleInput2">Apellido: </label>
-            <input name="apellido" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Perez" required>
-        </div>
-        <div class="form-group mb-3">
             <label for="exampleInputEmail1">Email: </label>
             <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="asd@asd.com" required>
+        </div>
+        <div class="form-group mb-3">
+            <label for="formGroupExampleInput">Token: </label>
+            <input name="token" type="text" class="form-control" id="formGroupExampleInput" required>
+        </div>
+        <div class="form-group mb-3">
+            <label for="formGroupExampleInput2">Token_name: </label>
+            <input name="token_name" type="text" class="form-control" id="formGroupExampleInput2" required>
+        </div>
+        <div class="form-group mb-3">
+            <label for="formGroupExampleInput2">Token_img: </label>
+            <input name="token_img" type="url" class="form-control" id="formGroupExampleInput2" required>
+        </div>
+        <div class="form-group mb-3">
+            <label for="formGroupExampleInput2">Site_url: </label>
+            <input name="site_url" type="text" class="form-control" id="formGroupExampleInput2" required>
         </div>
         <button class="btn btn-primary" type="submit">Ingresar</button>
     </form>
