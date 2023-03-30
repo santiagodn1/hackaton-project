@@ -323,16 +323,20 @@ border-radius: 12px;
   padding: 20px;
   margin: 0 auto;
   background-color: var(--primary);
+  border-radius: 8px 8px 0px 0px;
 }
 
 .webB{
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
 }
 
 .webBBody{
   height: auto;
   border: var(--primary) 8px solid;
+  border-radius: 0px 0px 8px 8px;
 }
 
 .podsContainer{
