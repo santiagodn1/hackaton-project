@@ -269,10 +269,6 @@ border-radius: 12px;
   margin-bottom: 15px;
 }
 
-.divisor{
-  margin: 50px;
-}
-
 .divisor span{
   display: flex; 
   justify-content: center; 
@@ -312,6 +308,7 @@ border-radius: 12px;
   text-align: center;
   display: flex;
   align-items: center;
+  background-color: var(--background);
 }
 
 
